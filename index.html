@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Website</title>
+    <title>Algebra Quiz</title>
+    <!-- No folder path, just the file name -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Math Website!</h1>
-    <p>Here you will find algebra questions for Form 1 to Form 5.</p>
+    <div class="container">
+        <header>
+            <h1>Algebra Quiz</h1>
+            <p>Select your form and start the quiz!</p>
+        </header>
+
+        <div class="form-selection">
+            <button onclick="startQuiz('Form 1')">Form 1</button>
+            <button onclick="startQuiz('Form 2')">Form 2</button>
+            <button onclick="startQuiz('Form 3')">Form 3</button>
+        </div>
+
+        <div id="quiz-container"></div>
+        <p id="feedback"></p>
+    </div>
+
+    <!-- No folder path, just the file name -->
     <script src="script.js"></script>
 </body>
 </html>
